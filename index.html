@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial1</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+        <img src="imagenes/2025-02-22-ANIMACION.gif" alt="">
+    </header>
+        <nav class="topnav" id="myTopnav">
+            <a href="#">Inicio</a>
+            <a href="#tradicional">Animación tradicional</a>
+            <a href="#2d">Animación 2D</a>
+            <a href="#3d">Animación 3D</a>
+            <a href="#stopmotion">Stop Motion</a>
+            <a class="icon" onclick="funcionNavBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+   
+
+    
+
+    <main>
+        <section id="desc">
+            <p>
+                La animación es una técnica que da vida a imágenes, objetos o personajes inanimados, creando la ilusión
+                de movimiento y acción. Se considera una forma de arte y comunicación que ha evolucionado
+                significativamente con el avance de la tecnología.
+                Se basa en una ilusión óptica que se denomina “persistencia retiniana”. Nuestra vista solamente retiene
+                las imágenes durante una décima de segundo. Por eso, cuando aparecen a mayor velocidad, nuestro cerebro
+                las fusiona entre sí.
+            </p>
+
+            <div id="oculto" class="oculto">
+                <p>La animación se utiliza en una amplia variedad de campos:<br>
+                    - Cine y televisión: Películas animadas, series de televisión y comerciales.<br>
+                    - Publicidad: Anuncios animados para productos y servicios.<br>
+                    - Videojuegos: Personajes y entornos animados.<br>
+                    - Educación: Material educativo animado para explicar conceptos complejos.<br>
+                    - Arte y diseño: Instalaciones de arte animadas y gráficos dinámicos.<br><br>
+
+                    La tecnología ha jugado un papel fundamental en la evolución de la animación. Con el advenimiento de
+                    la
+                    computadora y el software de animación, los artistas pueden crear imágenes y secuencias de
+                    movimiento
+                    con mayor facilidad y precisión. La animación por computadora (CGI) ha revolucionado la industria,
+                    permitiendo la creación de mundos y personajes realistas y detallados.<br>
+
+                    A medida que la tecnología continúa avanzando, la animación sigue evolucionando y expandiéndose
+                    hacia
+                    nuevos campos y posibilidades. La animación es una forma de arte y comunicación que sigue cautivando
+                    audiencias de todas las edades y culturas.</p>
+            </div>
+            <button id="vermas" class="vermas" onclick="vermas()">Ver más</button>
+            
+        </section>
+        <section id="tradicional" class="tipo">
+
+                <h2 class="tituloizq">Animación tradicional <br>
+                    (2D, Cel, Dibujo a mano) </h2>
+
+            <div class="foto item1">
+                    <img class="der" src="imagenes/t-2.jpg" alt="">
+            </div>
+            <div class="texto item2 izq">
+                <p>Los personajes y fondos se dibujan a mano o con programas informáticos.
+                    Se utiliza para crear historias y dar movimiento a los personajes.
+                    Se usó en las primeras películas de Disney y en otros dibujos animados populares como Los Simpson.
+                    Antiguamente, los animadores dibujaban los personajes fotograma a fotograma, y luego esos dibujos se
+                    transferían a hojas de acetato transparentes llamadas celdas para pintarlas. De ahí viene el término
+                    de animación en celdas.
+                    A lo largo de la década de los 90, casi todos los estudios de animación dejaron de utilizar carretes
+                    y empezaron a escanear los dibujos en el ordenador para colorearlos digitalmente, y ahora muchos
+                    animadores que dibujan a mano se saltan el papel por completo y dibujan directamente en el ordenador
+                </p>
+            </div>
+        </section>
+
+        <section id="2d" class="tipo">
+
+                <h2>Animación 2D <br>
+                                    (Basado en vectores)</h2>
+
+                <div class="foto item1">
+                            <img src="imagenes/2d-1.jpg" alt="">
+                </div>
+                
+            <div class="texto item2">
+                <p>Hoy en día existen nuevas formas de crear animación en 2D utilizando marionetas digitales en 2D. Se
+                    trata de personajes 2D que se construyen con un sistema de huesos y controles que se pueden
+                    manipular de forma similar a un rig de personaje 3D.
+                    La diferencia entre los personajes 2D rigged y los dibujados a mano puede ser un poco borrosa.
+                    Programas como Toon Boom Harmony y Adobe Animate CC permiten mezclar y combinar sin problemas la
+                    animación dibujada a mano con las técnicas de marionetas 2D, a veces incluso dentro del mismo
+                    personaje.
+                    Un personaje puede tener huesos que permitan al animador posarlo, pero también tener otras partes
+                    que se animan a mano.</p>
+            </div>
+        </section>
+
+        <section id="3d" class="tipo">
+
+                <h2>Animación 3D <br>
+                    (CGI, Animación por computadora)</h2>
+
+            <div class="foto item1">
+                    <img src="imagenes/3d-1.jpg" alt="">
+            </div>
+            <div class="texto item2 izq">
+                <p>Se utiliza para dar movimiento a personajes y objetos en planos tridimensionales.
+                    Se usa en películas y videojuegos.
+                    Un animador utiliza una marioneta digital (llamada rig de personaje) para posicionar al personaje, y
+                    luego utiliza un sistema de trayectorias de movimiento (o splines) para definir el movimiento del
+                    personaje entre esas poses.
+                    La computadora procede a interpolar los cuadros de la animación entre los cuadros clave. El animador
+                    entonces refina estos cuadros hasta que están satisfechos con la animación.
+                    La animación 3D es un proceso técnicamente intensivo, que a menudo involucra a muchos especialistas
+                    separados para modelar el personaje, aparejarlo con huesos y controles, animarlo y luego
+                    texturizarlo e iluminarlo para el resultado final.</p>
+
+            </div>
+        </section>
+
+        <section id="stopmotion" class="tipo">
+
+                <h2>Animación Stop Motion</h2>
+
+                <div class="foto item1">
+                    <img src="imagenes/st-1.jpg" alt="">
+            </div>
+
+            <div class="texto item2">
+                <p>Se utiliza para hacer que objetos físicos parezcan moverse por sí solos.
+                    Se fotografía a los objetos cuadro por cuadro y se reproduce la serie de fotogramas a velocidad
+                    normal.
+                    Se utilizan diversos materiales, como arcilla, marionetas de papel, pequeñas figuras, Lego,
+                    plastilina y objetos cotidianos.
+                    El stop motion tiene varias variantes, pero todas implican la manipulación de objetos del mundo
+                    real. Estos objetos se mueven ligeramente y se fotografían un fotograma cada vez. Cuando se muestran
+                    en secuencia, estos fotogramas crean la ilusión de movimiento.
+                    En las películas de stop motion de mayor calidad, como las creadas por Laika (Coraline, Kubu y las
+                    dos cuerdas), se rueda una marioneta especialmente preparada en un escenario en miniatura.</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div>
+            <a href="#">Ir a inicio</a>
+            <a href="#tradicional">Animación tradicional</a>
+            <a href="#2d">Animación 2D</a>
+            <a href="#3d">Animación 3D</a>
+            <a href="#stopmotion">Animación Stop Motion</a>
+        </div>
+        <img width="10%" src="imagenes/logo.png" alt="">
+    </footer>
+</body>
+
+</html>
