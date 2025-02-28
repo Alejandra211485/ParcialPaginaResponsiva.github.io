@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Concert One",sans-serif, 'Gluten', cursive;
+    font-family: "Concert One",sans-serif;
     font-weight: 400;
     font-size: large;
     align-content: center;
@@ -89,6 +89,7 @@ main {
 
 #des p {
     color: #2e2319;
+    font-family: sans-serif;
 }
 
 .oculto {
@@ -178,7 +179,7 @@ h2 {
     color: #2e2319;
     text-decoration: #fff;
     text-align: center;
-    font-family: 'Gluten', cursive;
+    font-family: sans-serif;
 }
 
 
